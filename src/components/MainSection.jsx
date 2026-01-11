@@ -18,16 +18,16 @@ function MainSection() {
           onMouseLeave={() => setIsHovered(false)}
         >
           <div className="relative">
-            <div className="absolute z-10 top-[340px] w-full flex flex-col items-center justify-center text-white">
+            <div className="absolute z-10 top-[180px] md:top-[340px] w-full flex flex-col items-center justify-center text-white px-4 md:px-0">
               <p
-                className={`font-qwigley-regular text-[40px] mt-2 tracking-[10px] transition duration-500 ${
-                  isHovered ? "scale-200 translate-y-[-100px] text-secondary" : "scale-100"
+                className={`font-qwigley-regular text-[30px] md:text-[40px] mt-2 tracking-[5px] md:tracking-[10px] transition duration-500 ${
+                  isHovered ? "scale-150 md:scale-200 translate-y-[-50px] md:translate-y-[-100px] text-secondary" : "scale-100"
                 }`}
               >
                 Didula Prabashwara
               </p>
               <p
-                className={`w-[600px] font-delius-regular text-center text-[12px] mt-[-50px] transition duration-500 ${
+                className={`w-[90%] md:w-[600px] font-delius-regular text-center text-[10px] md:text-[12px] mt-[-30px] md:mt-[-50px] transition duration-500 ${
                   isHovered ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -42,8 +42,8 @@ function MainSection() {
 
       <div className="w-full h-[60px] bg-primary absolute bottom-0" data-aos="fade-up"
         data-aos-delay="300">
-        <div className="relative flex items-center h-full text-[14px] pl-5">
-          <div className="flex text-white font-delius-regular">
+        <div className="relative flex items-center h-full text-[12px] md:text-[14px] pl-3 md:pl-5 overflow-hidden">
+          <div className="flex text-white text-[9px] font-delius-regular flex-wrap md:flex-nowrap">
             <p>CRIZY - VISUAL // BEATS // STREET-STYLE</p> <pre> </pre>
             <p className="text-secondary">Artist</p> <pre> </pre>
             <p>•</p>
@@ -51,7 +51,7 @@ function MainSection() {
             <p>•</p>
             <p className="ml-1 text-secondary">Designer</p>
           </div>
-          <div className="absolute bg-secondary right-0 w-[calc(50%-100px)] h-full rounded-bl-[30px] rounded-tl-[30px]"></div>
+          <div className="absolute bg-secondary right-0 w-[calc(50%-100px)] md:w-[calc(50%-100px)] h-[20px] rounded-bl-[30px] rounded-tl-[30px]"></div>
         </div>
       </div>
     </>

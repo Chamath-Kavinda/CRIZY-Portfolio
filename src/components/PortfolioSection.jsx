@@ -9,7 +9,7 @@ function PortfolioSection() {
     <>
       {/* PORTFOLIO Title with Fade-Down Animation */}
       <div
-        className="w-full h-[60px] bg-secondary hover:bg-primary flex justify-center items-center text-primary hover:text-secondary text-[40px] font-righteous rounded-full cursor-default"
+        className="w-full h-[40px] md:h-[60px] bg-secondary hover:bg-primary flex justify-center items-center text-primary hover:text-secondary text-[30px] md:text-[40px] font-righteous rounded-full cursor-default"
         data-aos="fade-up"
         data-aos-delay="400"
       >
@@ -22,11 +22,11 @@ function PortfolioSection() {
         data-aos="fade-up"
         data-aos-delay="300"
       >
-        <div className="w-[80%] h-[400px] grid grid-cols-5 gap-5">
+        <div className="w-[90%] md:w-[80%] h-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 md:gap-5">
           {Images.slice(0, 10).map((item, index) => (
             <div
               key={item.id}
-              className={`h-[190px] relative rounded-[20px] overflow-hidden cursor-pointer`}
+              className={`h-[150px] md:h-[190px] relative rounded-[20px] overflow-hidden cursor-pointer`}
               onMouseEnter={() => setHoveredId(item.id)}
               onMouseLeave={() => setHoveredId(null)}
               onClick={() =>
@@ -57,9 +57,9 @@ function PortfolioSection() {
                       : "opacity-0"
                   }`}
               >
-                <div className="m-1 font-rajdhani font-bold">
-                  <p className="pb-[15px] underline text-[18px]">Art Description</p>
-                  <p className="text-black text-[12px]">{item.description}</p>
+                <div className="m-1 font-rajdhani font-bold text-center">
+                  <p className="pb-[10px] md:pb-[15px] underline text-[16px] md:text-[18px]">Art Description</p>
+                  <p className="text-black text-[10px] md:text-[12px]">{item.description}</p>
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ function PortfolioSection() {
           <a
             href="https://www.instagram.com/didula_prabashwara/"
             target="_blank"
-            className="text-white text-[22px] font-rajdhani transition duration-900"
+            className="text-white text-[18px] md:text-[22px] font-rajdhani transition duration-900"
           >
             Visit More ...
           </a>

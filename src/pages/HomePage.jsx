@@ -8,11 +8,11 @@ function HomePage() {
   
 
   return (
-    <div className="flex w-full">
-      <div className="w-[calc(33.33%-250px)] "></div>
+    <div className="flex w-full flex-col md:flex-row">
+      <div className="hidden md:block w-0 md:w-[calc(33.33%-250px)]"></div>
 
-      <div className="flex-1">
-        <section id="home" className="flex relative h-[600px] mb-[50px] mt-[-50px] pt-[60px]">
+      <div className="flex-1 px-4 md:px-0">
+        <section id="home" className="flex relative h-[300px] md:h-[600px] mb-[50px] mt-[-50px] pt-[60px]">
             <MainSection/>
         </section>
         <section id="portfolio" className="pt-[60px]">
@@ -26,7 +26,7 @@ function HomePage() {
         </section>
       </div>
 
-      <div className="w-[calc(33.33%-250px)]"></div>
+      <div className="hidden md:block w-0 md:w-[calc(33.33%-250px)]"></div>
     </div>
   );
 }

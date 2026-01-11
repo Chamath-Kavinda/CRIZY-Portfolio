@@ -13,7 +13,7 @@ AOS.init({
 function App() {
 
   return (
-    <div className="bg-primary pb-[200px] w-full">
+    <div className="bg-primary pb-[200px] md:pb-[200px] w-full min-h-screen">
       <Header/>
       <HomePage/>
     </div>
