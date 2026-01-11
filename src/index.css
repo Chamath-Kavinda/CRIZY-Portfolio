@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani&family=Rubik+80s+Fade&family=Squada+One&family=Qwigley&family=Outfit&family=Mogra&family=Righteous&family=Delius&family=Libertinus+Serif+Display&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #000;
+  --color-secondary: #f6be00;
+  --color-accent: #1a1a1a;
+
+  --font-anton: "Bebas Neue", sans-serif; 
+  --font-libertinus-serif: "Libertinus Serif Display", system-ui; 
+  --font-delius-regular: "Delius", cursive; 
+  --font-qwigley-regular: "Qwigley", cursive;
+  --font-mogra-regular: "Mogra", system-ui;
+  --font-outfit: "Outfit", sans-serif;
+  --font-righteous: "Righteous", sans-serif;
+  --font-rajdhani: "Rajdhani", sans-serif;
+  --font-squada-one: "Squada One", sans-serif;
+  --font-rubik-80s-fade: "Rubik 80s Fade", system-ui;
+}
